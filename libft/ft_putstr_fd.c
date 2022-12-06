@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: srossatt <srossatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 17:14:09 by srossatt          #+#    #+#             */
-/*   Updated: 2022/11/30 16:05:21 by srossatt         ###   ########.fr       */
+/*   Created: 2022/12/06 16:13:22 by srossatt          #+#    #+#             */
+/*   Updated: 2022/12/06 16:20:22 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z'))
-	{
-		return (1);
-	}
-	return (0);
+	write (fd, s, ft_strlen(s));
 }
