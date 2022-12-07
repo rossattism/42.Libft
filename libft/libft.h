@@ -6,7 +6,7 @@
 /*   By: srossatt <srossatt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 17:16:36 by srossatt          #+#    #+#             */
-/*   Updated: 2022/12/06 16:13:39 by srossatt         ###   ########.fr       */
+/*   Updated: 2022/12/07 17:33:54 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ int		ft_toupper(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	*ft_memset(void *b, int c, size_t len)
 
 #endif
