@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/12/09 13:25:35 by srossatt          #+#    #+#              #
+#    Updated: 2022/12/09 13:25:36 by srossatt         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra
 CC = gcc
@@ -8,6 +20,7 @@ ft_isalnum.c \
 ft_isascii.c \
 ft_isprint.c \
 ft_strlen.c \
+ft_memset.c \
 ft_toupper.c \
 ft_tolower.c \
 ft_strncmp.c \

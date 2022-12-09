@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: srossatt <srossatt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 18:16:41 by srossatt          #+#    #+#             */
-/*   Updated: 2022/12/07 13:21:02 by srossatt         ###   ########.fr       */
+/*   Updated: 2022/12/09 13:37:15 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include	"libft.h"
 
 int	ft_isascii(int c)
 {

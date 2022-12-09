@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/30 18:35:54 by srossatt          #+#    #+#             */
-/*   Updated: 2022/12/09 13:24:31 by srossatt         ###   ########.fr       */
+/*   Created: 2022/12/09 12:23:55 by srossatt          #+#    #+#             */
+/*   Updated: 2022/12/09 13:24:55 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	unsigned char	*s;
+	size_t			i;
+
+	i = 0;
+	s = b;
+	while (len > 0)
+	{
+		s[i] = c;
+		len--;
+		i++;
+	}
+	return ((void *)s);
 }
+
+
