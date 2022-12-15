@@ -9,7 +9,7 @@
 </p>
 
 ## Sobre el proyecto
-> Libft es el primer proyecto de 42 como estudiante. Consiste en crear una librería estática con funciones estándar de C que serán recodigicadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte en futuros proyectos, ya que está prohibido utilizar las originales. 
+> Libft es el primer proyecto de 42 como estudiante. Consiste en crear una librería estática con funciones estándar de C que serán recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte en futuros proyectos, ya que está prohibido utilizar las originales. 
 
 ## Indice
 <p align="center">
