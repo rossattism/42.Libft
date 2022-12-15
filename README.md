@@ -5,7 +5,7 @@
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.md"> <img src="https://img.shields.io/badge/lang-en-purple" alt="english language badge"></a> 
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
   <i> Repository with my first library. <br /> It consists of a static library with recoded standard functions in C. </i> <br />
-<b> Content: </b> &nbsp <a href="https://github.com/RossattiSM/Libft/tree/main/libft"> libft</a> &nbsp - &nbsp <a href=""> commented_libft</a> &nbsp - &nbsp  <a href=""> tests </a>
+<b> Content: </b> &nbsp <a href="https://github.com/RossattiSM/Libft/tree/main/libft"> libft</a> &nbsp - &nbsp <a href=""> commented_libft</a> &nbsp - &nbsp  <a href=""> main_files </a>
 </p>
 
 ## About
@@ -14,9 +14,9 @@
 ## Index
 <p align="center">
   <ul>
-    <li> <a href=""> Functions </a> </li>
-    <li> <a href=""> Makefile </a> </li>
-    <li> <a href=""> Tests </a> </li>
+    <li> <a href="https://github.com/RossattiSM/Libft#functions"> Functions </a> </li>
+    <li> <a href="https://github.com/RossattiSM/Libft#commented-libft"> Commented Libft </a> </li>
+    <li> <a href=""> Main files </a> </li>
  </ul>
 </p>
 
