@@ -26,7 +26,7 @@
 
 ## Commented Libft
 
-## Tests
+## Main Files
 
 ### Credits
  - <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
