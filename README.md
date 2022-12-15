@@ -14,17 +14,17 @@
 ## Index
 <p align="center">
   <ul>
-    <li> <a href=""> Makefile </a> </li>
     <li> <a href=""> Functions </a> </li>
+    <li> <a href=""> Makefile </a> </li>
     <li> <a href=""> Tests </a> </li>
  </ul>
 </p>
 
 <hr>
 
-## Makefile
+## Functions
 
-## Project Content
+## Commented Libft
 
 ## Tests
 
