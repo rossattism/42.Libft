@@ -16,7 +16,7 @@
   <ul>
     <li> <a href="https://github.com/RossattiSM/Libft#functions"> Functions </a> </li>
     <li> <a href="https://github.com/RossattiSM/Libft#commented-libft"> Commented Libft </a> </li>
-    <li> <a href=""> Main files </a> </li>
+    <li> <a href="https://github.com/RossattiSM/Libft/blob/main/README.md#main-files"> Main files </a> </li>
  </ul>
 </p>
 
