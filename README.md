@@ -15,12 +15,18 @@
 <p align="center">
   <ul>
     <li> <a href=""> Makefile </a> </li>
-    <li> <a href=""> Project Content </a> </li>
+    <li> <a href=""> Functions </a> </li>
     <li> <a href=""> Tests </a> </li>
  </ul>
 </p>
 
 <hr>
+
+## Makefile
+
+## Project Content
+
+## Tests
 
 ### Credits
  - <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
