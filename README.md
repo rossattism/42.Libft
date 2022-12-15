@@ -4,7 +4,7 @@
 
 <p align="center"> <i> Repository with my first library. <br /> It consists of a static library with recoded standard functions in C. </i> </p>
 
-# Libft [⚠️in development]
+<h1 align="center"> [⚠️in development] </h1>
 
 ## Content
 <p align="center">
@@ -15,9 +15,21 @@
  </ul>
 </p>
 
+## About Libft
+> This is the first project at 42 programming school. It consists of a static library with recoded standard functions in C that runs and compiles the code using a Makefile. The library can be used as a support in future school's projects, since it's not allowed to use the original functions. 
+
+## Index
+<p align="center">
+  <ul>
+    <li> <a href=""> Libft Functions </a> </li>
+    <li> <a href=""> Commented_Libft </a> </li>
+    <li> <a href=""> Tests </a> </li>
+ </ul>
+</p>
+
 <hr>
 
-## Credits
+### Credits
  - <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
 
 <hr>
