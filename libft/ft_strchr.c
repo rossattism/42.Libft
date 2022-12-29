@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/12 14:01:57 by srossatt          #+#    #+#             */
-/*   Updated: 2022/12/27 18:16:08 by srossatt         ###   ########.fr       */
+/*   Created: 2022/12/29 12:33:07 by srossatt          #+#    #+#             */
+/*   Updated: 2022/12/29 12:49:31 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t			i;
-	unsigned char	*p;
+	char	find;
+	int		i;
 
+	find = (unsigned char)c;
 	i = 0;
-	p = s;
-	while (i < n)
+	while (s[i])
 	{
-		p[i++] = 0;
+		if (s[i] == find)
+			return ((char *)s + i);
+		i++;
 	}
+	if (s[i] == find)
+		return ((char *)s + i);
+	return (0);
 }
