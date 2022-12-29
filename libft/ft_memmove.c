@@ -6,12 +6,20 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 16:45:38 by srossatt          #+#    #+#             */
-/*   Updated: 2022/12/27 17:38:44 by srossatt         ###   ########.fr       */
+/*   Updated: 2022/12/29 15:39:40 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief copies "len" bytes from src memory into dst memory
+ * 
+ * @param dst destination string
+ * @param src source string
+ * @param len bytes length
+ * @return a pointer to dst
+ */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*s;
