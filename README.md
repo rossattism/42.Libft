@@ -5,7 +5,7 @@
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.md"> <img src="https://img.shields.io/badge/lang-en-purple" alt="english language badge"></a> 
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
   <i> Repository with my first library. <br /> It consists of a static library with recoded standard functions in C. </i> <br />
-<b> Content: </b> &nbsp <a href="https://github.com/RossattiSM/Libft/tree/main/libft"> libft</a> &nbsp - &nbsp <a href=""> commented_libft</a> &nbsp - &nbsp  <a href=""> main_files </a>
+<b> Content: </b> &nbsp <a href="https://github.com/RossattiSM/Libft/tree/main/libft"> libft</a> &nbsp - &nbsp <a href=""> commented_libft</a> &nbsp - &nbsp  <a href=""> main </a>
 </p>
 
 ## About
