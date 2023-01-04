@@ -6,7 +6,7 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 17:16:36 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 12:36:07 by srossatt         ###   ########.fr       */
+/*   Updated: 2022/12/29 15:56:21 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,45 +153,6 @@ char	*ft_strrchr(const char *s, int c);
  * @return 0 (s1 = s2) -0 (s1 < s2) +0 (s1 > s2) 
  */
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-/**
- * @brief Searches for the first occurrence of a character 'c'
- * in the first 'n' bytes given of a string 's'.
- *
- * @param s string
- * @param c character to be found in string
- * @param n length of bytes
- * @return A pointer to the first occurrence of 'c' in 's'
- * or NULL if 'c' is not found.
- */
-void	*ft_memchr(const void *s, int c, size_t n);
-/**
- * @brief Compares the first 'n' bytes of the memory areas 's1' and 's2'.
- *
- * @details The memcmp() returns zero if the two strings are identical,
- * otherwise it returns the difference between the first two differing
- * bytes (treated as unsigned char).
- *
- * @param s1 string 1
- * @param s2 string 2
- * @param n bytes length
- * @return An integer less than 0 if (s1 < s2), equal to 0 if (s1 = s2),
- * or greater than 0 if (s1 > s2). If 'n' is 0, the return value is 0.
- */
-int		ft_memcmp(const void *s1, const void *s2, size_t n);
-/**
- * @brief Locates the first occurrence of the null-terminated string 'little'
- * in the string 'big', where not more than 'len' characters are searched.
- *
- * @details Characters that appear after a `\0' character are not searched.
- *
- * @param big source string
- * @param little string to be located
- * @param len bytes length to search
- * @return If 'little' is an empty string, 'big' is returned; if 'little'
- * occurs nowhere in 'big', NULL is returned; otherwise a pointer to the
- * first character of the first occurrence of 'little' is returned.
- */
-char	*ft_strnstr(const char *big, const char *little, size_t len);
 /**
  * @brief sends the 'c' character to the file descriptor
  * 

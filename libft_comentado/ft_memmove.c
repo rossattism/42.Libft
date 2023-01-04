@@ -5,20 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/27 16:45:38 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 12:43:45 by srossatt         ###   ########.fr       */
+/*   Created: 2023/01/04 13:25:18 by srossatt          #+#    #+#             */
+/*   Updated: 2023/01/04 13:26:11 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h> // librería que contiene size_t y malloc
+#include "libft.h" // librería local que contiene ft_memcpy
 /**
- * @brief Copies 'len' bytes from 'src' to 'dst' that may overlap;
- * the copy is always done in a non destructive manner.
+ * @brief  Copia "len" bytes de 'src' en 'dst', que pueden solaparse.
  *
- * @param dst destination string
- * @param src source string
- * @param len bytes length
- * @return The original value of 'dst'.
+ * @param dst string de destino
+ * @param src string de orígen
+ * @param len longitud de bytes
+ * @return El valor original de 'dst'.
  */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -47,4 +47,21 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	return (dst);
+}
+/**
+ * Para el main creamos dos cadenas de caracteres que usaremos como
+ * argumentos y un puntero char para contener el retorno de la función.
+ * Igualamos 'ret' al llamado de la función con las cadenas pasadas como
+ * argumento y el largo que le queremos pasar a 'len'. Usamos printf para
+ * imprimir 'ret' y poder visualizar el retorno de la función.
+*/
+int main(void)
+{
+    char    s1[30] = "memmove";
+    char    s2[30] = "is";
+    char    *ret;
+ 
+    ret = ft_memmove(s1, s2, 2);
+    printf("%s", ret);
+    return (0);
 }

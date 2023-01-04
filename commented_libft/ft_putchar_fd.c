@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 15:48:23 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 11:57:19 by srossatt         ###   ########.fr       */
+/*   Created: 2022/12/06 13:12:33 by srossatt          #+#    #+#             */
+/*   Updated: 2022/12/29 15:56:31 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
- * @brief Verifies if 'c' is alphabetical.
- *
- * @param c character passed as integer
- * @return 1 if alphabetical, 0 if not.
+ * @brief sends the 'c' character to the file descriptor
+ * 
+ * @param c character
+ * @param fd file descriptor
+ * @return none
  */
-int	ft_isalpha(int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+	write (fd, &c, 1);
 }

@@ -1,16 +1,6 @@
-/////////////////////////////////////////////////
-/// libraries								  ///
-/////////////////////////////////////////////////
-
 #include "libft.h"
-#include <unistd.h>
-#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
-/////////////////////////////////////////////////
-/// mains									  ///
-/////////////////////////////////////////////////
 
 /* int	ft_isalpha(int c);
 int	main(void)
@@ -181,44 +171,13 @@ int main(void)
 /* int	ft_strncmp(const char *s1, const char *s2, size_t n);
 int	main(void)
 {
-	char s1[]= "strncmp";
+	char s1[]= "strmcmp";
 	char s2[]= "rrr";
-	int	ret = ft_strncmp(s1, s2, 3);
+	int	ret = ft_strncmp(s1, s2, 3); // es el retorno + ó - según el 'n' que le pasamos: 3 en este ejemplo;
 	printf ("%d", ret);
 	return (0);
 }
 */
 
-/* void	*ft_memchr (const void *s, int c, size_t n);
-int	main(void)
-{
-	char s[] = "memchr";
-	printf("%s\n", ft_memchr(s, 'c', 2));
-	printf("%s\n", ft_memchr(s, 'c', 5));
-	return (0);
-}
-*/
-
-/* int	ft_memcmp(const void *s1, const void *s2, size_t n);
-int main(void)
-{
-	char s1[] = "memcmp";
-	char s2[] = "memcmpft";
-	printf("%d\n", ft_memcmp(s1, s2, 5));
-	printf("%d\n", ft_memcmp(s1, s2, 7));
-
-	return (0);
-}
-*/
-
-/* char    *ft_strnstr(const char *big, const char *little, size_t len);
-int main()
-{
-    char big[15] = "strnstr";
- 
-    char *ret = ft_strnstr(big, "nst", 6);
-    printf("%s\n", ret);
- 
-    return (0);
-}
+/*
 */

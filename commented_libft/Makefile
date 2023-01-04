@@ -6,7 +6,7 @@
 #    By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/09 13:25:35 by srossatt          #+#    #+#              #
-#    Updated: 2023/01/04 12:34:15 by srossatt         ###   ########.fr        #
+#    Updated: 2022/12/29 13:34:55 by srossatt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,9 +31,6 @@ ft_tolower.c \
 ft_strchr.c \
 ft_strrchr.c \
 ft_strncmp.c \
-ft_memchr.c \
-ft_memcmp.c \
-ft_strnstr.c \
 ft_putchar_fd.c \
 ft_putstr_fd.c \
 

@@ -6,19 +6,22 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 11:44:28 by srossatt          #+#    #+#             */
-/*   Updated: 2022/12/29 15:39:33 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/04 12:17:16 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 /**
- * @brief appends string src to the end of dst and it depends on dstsize
- * 
+ * @brief Appends string 'src' to the end of 'dst' and depends on 'dstsize'.
+ *
+ * @details The strlcat() function offers the argument 'dstsize' which
+ * sets the length of the destination string, effectively equal to 
+ * its buffer size.
+ *
  * @param dst destination string
  * @param src source string
  * @param dstsize destination buffer length
- * @return the combined length of src and dst
+ * @return The combined length of 'src' and 'dst'.
  */
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

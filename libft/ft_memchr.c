@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/12 14:01:57 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 12:37:07 by srossatt         ###   ########.fr       */
+/*   Created: 2023/01/04 12:22:56 by srossatt          #+#    #+#             */
+/*   Updated: 2023/01/04 12:24:03 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
- * @brief Turns the first 'n' bytes of 's' to NULL.
+ * @brief Searches for the first occurrence of a character 'c'
+ * in the first 'n' bytes given of a string 's'.
  *
- * @param s string to be modified
+ * @param s string
+ * @param c character to be found in string
  * @param n length of bytes
- * @return None.
+ * @return A pointer to the first occurrence of 'c' in 's'
+ * or NULL if 'c' is not found.
  */
-void	ft_bzero(void *s, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*ma;
+	unsigned char	*sc;
 	size_t			i;
 
+	sc = (unsigned char *)s;
 	i = 0;
-	ma = s;
 	while (i < n)
 	{
-		ma[i++] = 0;
+		if (sc[i] == (unsigned char)c)
+			return ((void *)&sc[i]);
+		i++;
 	}
+	return (0);
 }
