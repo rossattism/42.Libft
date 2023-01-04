@@ -1,34 +1,47 @@
-/* NOMBRE: bzero
-DESC: convierte en nulos los primeros 'n' caracteres de una str 's'
-RETURN: el string modificado */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/04 14:19:09 by srossatt          #+#    #+#             */
+/*   Updated: 2023/01/04 14:19:16 by srossatt         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stdlib.h> // contiene size_t
-#include <string.h> // contiene strcpy
-#include <stdio.h> // contiene puts y printf
-
-
+#include "libft.h"
+/**
+ * @brief  convierte en nulos los primeros 'n' caracteres de una cadena 
+ * de caracteres 's'.
+ *
+ * @param s string a ser modificada
+ * @param n longitud de bytes a modificar
+ * @return Ninguno.
+ */
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*p; // declaración de sustituto del prototipo
-	size_t			i; // declaro contador
+	/**
+     * Comenzamos creando una copia 'ma' de void *s casteado a
+     * unsigned char y compatible con size_t (que solo acepta
+     * valores positivos) para que pueda ser manipulado por la
+     * función. Luego creamos un contador que debe ser size_t
+     * al igual que 'n'. Continuamos iniciando el contador a 0
+     * e igualando 'ma' a 's'.
+     */
+	unsigned char	*ma;
+	size_t			i;
 
-	i = 0; // inicio contador
-	p = s; // declaro a p igual a s para convertirlo en unsigned char y poder modificarlo
-	while (i < n) // creo un bucle que se mueva por el array mientras sea menor al valor de 'n'
+	i = 0;
+	ma = s;
+	/**
+     * Al igual que en ft_memset, la condición del bucle será que
+     * mientras el contador 'i' sea menor que 'n' (siendo n - 1),
+     * 'i' recorrerá 'ma' y además será igual que 0. Esta función
+     * no devuelve nada.
+     */
+	while (i < n)
 	{
-		p[i] = 0; // la posicion de i la convierto en 0 mientras i avanza por el array
-		i++;
+		ma[i++] = 0;
 	}
-	return ((void *)p); // convertimos a p en void nuevamente para obtener un retorno
-}
-
-int main(void)
-{
-    char s[30];
-    strcpy(s, "bzero"); // copiamos el string
-    puts(s); // la ft "puts" se usa para escribir una secuencia de caracteres
-    ft_bzero(s, 5); // llamamos a la función
-    puts(s); // imprime el string modificado
-	printf ("%c", s[7]);
-    return (0);
 }
