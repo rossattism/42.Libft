@@ -9,8 +9,8 @@
 <p align="center"> <b>
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#sobre-el-proyecto"> Sobre el proyecto </a> • 
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#funciones"> Funciones </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md"> Guia de estudio </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md"> Links útiles </a>
+<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> Guia de estudio </a>  • 
+<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#links-%C3%BAtiles"> Links útiles </a>
 </p> </b>
 <hr>
 
