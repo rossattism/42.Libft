@@ -9,19 +9,21 @@
 <p align="center"> <b>
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#sobre-el-proyecto"> Sobre el proyecto </a> • 
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#funciones"> Funciones </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> Guia de estudio </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#links-%C3%BAtiles"> Links útiles </a>
+<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> Guía de estudio </a>  • 
+<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> Enlaces útiles </a>
 </p> </b>
 <hr>
 
+> El objetivo de este repositorio es ayudar a los estudiantes principiantes (como yo fui y sigo siendo) a obtener el conocimiento necesario para lograr este proyecto sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos, aprovechar la <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/libft_comentado"> versión comentada </a> para comprender la codificación y consultar los <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> enlaces útiles </a> para obtener más información.
+
 ## Sobre el proyecto
-> Libft es el primer proyecto de 42 como estudiante. Consiste en crear una librería estática con funciones estándar de C recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte en futuros proyectos, ya que está prohibido utilizar las originales. 
+Libft es el primer proyecto de 42 como estudiante. Consiste en crear una librería estática con funciones estándar de C recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte en futuros proyectos, ya que está prohibido utilizar las originales. 
 
 ## Funciones
 
 ## Guía de estudio
 
-## Links útiles 
+## Enlaces útiles 
 
 <b> Créditos </b> <br />
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
