@@ -6,20 +6,21 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 17:54:53 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 12:22:19 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/16 18:08:40 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include    "libft.h"
-/**
- * @brief Compares 'n' bytes of 's1' and 's2'
- *
- * @param s1 string 1
- * @param s2 string 2
- * @param n bytes length
- * @return Number 0 if (s1 = s2), negative numbers if (s1 < s2)
- * and positive numbers if (s1 > s2)
+/**                                 FT_STRNCMP
+ * The function is made up of a main condition which is a loop that starts with 
+ * the existence of 's1' and 's2' and as long as 'i' is less than the 'n' passed 
+ * as an argument. Inside, there is another condition that compares the position 
+ * of 'i' in 's1' with the position of 'i' in 's2', but only as long as they are 
+ * different. If all conditions are met, the difference between 's1' and 's2' 
+ * casted to 'unsigned char' is returned. If the conditions are not met, then 
+ * 's1' is equal to 's2' and therefore 0 is returned.
  */
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
