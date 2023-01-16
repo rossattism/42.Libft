@@ -6,7 +6,7 @@
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
 <i> <b> Repositorio para el proyecto Libft del Cursus de 42.</b> <br />
 Consiste de una librería estática con funciones estándar de C recodificadas. <br />
-Realizado por RossattiSM para 42 Málaga. </i>
+Versión realizada por RossattiSM para 42 Málaga. </i>
 </p>
 <p align="center"> <b>
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#sobre-el-proyecto"> Sobre el proyecto </a> • 
