@@ -4,7 +4,9 @@
 <img src="https://github.com/byaliego/42-project-badges/blob/main/badges/libft.png?raw=true" alt="libft project badge" /> <br />
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.md"> <img src="https://img.shields.io/badge/lang-en-purple" alt="english language badge"></a> 
 <a href="https://github.com/RossattiSM/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
-  <i> Repositorio con mi primer librería. <br /> Consiste de una librería estática con funciones estándar de C recodificadas. </i> <br />
+<i> <b> Repositorio para el proyecto Libft del Cursus de 42.</b> <br />
+Consiste de una librería estática con funciones estándar de C recodificadas. <br />
+Realizado por RossattiSM para 42 Málaga. </i>
 </p>
 <p align="center"> <b>
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#sobre-el-proyecto"> Sobre el proyecto </a> • 
@@ -14,7 +16,7 @@
 </p> </b>
 <hr>
 
-> El objetivo de este repositorio es <b> ayudar a los estudiantes a obtener el conocimiento necesario para lograr este proyecto </b> sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos, aprovechar la <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/libft_comentado"> versión comentada </a> para comprender la codificación y consultar los <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> enlaces útiles </a> para obtener más información.
+> El objetivo de este repositorio es <b> ayudar a los estudiantes </b> (como yo) a obtener el conocimiento necesario <b> para lograr este proyecto </b> sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos, aprovechar la <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/libft_comentado"> versión comentada </a> para comprender la codificación y consultar los <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> enlaces útiles </a> para obtener más información.
 
 ## Sobre el proyecto
 Libft es el primer proyecto del Cursus de 42. Consiste en crear una librería estática con funciones estándar de C recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte en futuros proyectos, ya que está prohibido utilizar las originales. 
