@@ -15,7 +15,7 @@
 
 <hr>
 
-> The aim of this repository is to <b> help beginner students </b> (like I once was and still am) to get the knowledge that is needed <b> to achieve this project </b> without drowning in the process 🏄‍♀️. My advice is to use the <a href="https://github.com/RossattiSM/Libft#study-guide"> study guide </a> to learn the basic concepts, benefit from the <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/commented_libft"> commented version </a> to understand the coding, and check the <a href="https://github.com/RossattiSM/Libft/blob/main/README.md#useful-links"> useful links </a> for further information.
+> The aim of this repository is to <b> help beginner students </b> (like I once was and still am) to get the knowledge that is needed <b> to achieve this project </b> without sinking in the process 🏄‍♀️. My advice is to use the <a href="https://github.com/RossattiSM/Libft#study-guide"> study guide </a> to learn the basic concepts, benefit from the <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/commented_libft"> commented version </a> to understand the coding, and check the <a href="https://github.com/RossattiSM/Libft/blob/main/README.md#useful-links"> useful links </a> for further information.
 
 ## About
 Libft is the first project at 42 programming school. It consists of a static library with recoded standard functions in C that runs and compiles the code using a Makefile. The library can be used as a support in future school's projects, since it's not allowed to use the original functions. 
