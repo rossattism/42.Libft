@@ -19,7 +19,7 @@ Versión realizada por RossattiSM para 42 Málaga. </i>
 > El objetivo de este repositorio es <b> ayudar a los estudiantes </b> (como yo) a obtener el conocimiento necesario <b> para lograr este proyecto </b> sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos, aprovechar la <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/libft_comentado"> versión comentada </a> para comprender la codificación y consultar los <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> enlaces útiles </a> para obtener más información.
 
 ## Sobre el proyecto
-Libft es el primer proyecto del Cursus de 42. Consiste en crear una librería estática con funciones estándar de C recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte en futuros proyectos, ya que está prohibido utilizar las originales. 
+Libft es el primer proyecto del Cursus de 42. Consiste en crear una librería estática con funciones estándar de C recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte para futuros proyectos, ya que está prohibido utilizar las originales. 
 
 ## Funciones
 
