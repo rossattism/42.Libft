@@ -27,7 +27,7 @@ Libft es el primer proyecto del Cursus de 42. Consiste en crear una librería es
 
 ## Enlaces útiles 
 
-<b> Créditos </b> <br />
+## Créditos
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
 
 <hr>
