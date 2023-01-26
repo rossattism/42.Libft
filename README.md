@@ -35,7 +35,7 @@ Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/4
 <a href="https://github.com/RossattiSM"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Github_black.png?raw=true" alt="GitHub logo" style="width: 20px; height: 20px" /></a> &nbsp;
 <a href="https://open.spotify.com/user/21bih47uzlxunyyi4gbbvyvty"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Spotify_black.png?raw=true" alt="Spotify logo" style="width: 20px; height: 20px" /></a> &nbsp;
 <a href="mailto:smrossatti@gmail.com"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Gmail_black.png?raw=true" alt="GMAIL logo" style="width: 20px; height: 20px" /></a> &nbsp;
-<a href="https://github.com/RossattiSM"><img src="https://img.shields.io/badge/Made with-♥-black" /></a>
+<a href="https://shields.io/"><img src="https://img.shields.io/badge/Made with-♥-black" /></a>
 
 
 
