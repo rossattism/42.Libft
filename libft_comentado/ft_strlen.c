@@ -6,49 +6,45 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:21:06 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:21:07 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 10:20:15 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<stdio.h> // librería que contiene printf
-#include	<stdlib.h> // librería que contiene size_t
-/**
- * @brief Cuenta el número de caracteres dentro de un string 's'.
- *
- * @param s cadena de caracteres (string)
+#include "libft.h"
+/**                               FT_STRLEN:
+ * @brief Calcula el tamaño de una cadena de caracteres terminada en nulo
+ * apuntada por 's'.
+ * @param s Un puntero a la cadena de caracteres terminada en nulo.
  * @return El tamaño de 's'.
+ * @details
+ * SIZET: tipo de variable que puede contener únicamente valores no negativos
+ * y que es compatible con la cadena de caracteres constante del prototipo.
+ * WHILE: bucle que recorre 's' permitiendo devolver su tamaño, ya que este
+ * será igual al valor de 'i' una vez finalizada la iteración.
  */
 size_t	ft_strlen(const char *s)
 {
-	/**
-     * Primero creamos e iniciamos un contador de tipo size_t para
-     * que contenga solo valores positivos y sea compatible con la
-     * cadena de caracteres constante del prototipo (const char 's').
-	*/
-	size_t  i;
+	size_t	i;
 
 	i = 0;
-	/**
-     * Luego comenzamos un bucle que recorre el string 's' y permite
-     * devolver su tamaño, que será igual al valor del contador 'i' una
-     * vez finalizado el bucle.
-    */
 	while (s[i])
 	{
 		i++;
 	}
 	return (i);
 }
-/**
- * Para el main creamos una cadena de caracteres y un integer que será igual
- * al llamado de la función con la cadena de caracteres pasada como argumento.
- * Luego usamos printf para imprimir el retorno de la función que será igual
- * al tamaño del string pasado como argumento.
+
+/**                               FT_MAIN:
+ * @brief Convierte la función en programa para comprobarla por medio de la
+ * declaración de una cadena de caracteres 's' y un integer 'ret' igualado al
+ * llamado de la función con la cadena pasada como argumento. Utiliza printf
+ * para imprimir el valor 'ret' que será el retorno de la función (el tamaño
+ * de 's').
 */
 int main(void)
 {
-   char s[]= "strlen";
-   int ret = ft_strlen(s);
-   printf ("len: %d", ret);
-   return (0);
+	char s[]= "strlen";
+	int ret = ft_strlen(s);
+	printf ("len: %d", ret);
+	return (0);
 }

@@ -6,71 +6,62 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:21:41 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:22:04 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 11:41:42 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> // librería que contiene size_t
-#include <string.h> // librería que contiene strcpy
-#include <stdio.h> // librería que contiene puts
-/**
- * @brief Copia caracteres 'c' (casteados a unsigned char)
- * en los primeros 'len' bytes de una string 'b'.
- *
- * @param b string
- * @param c caracteres pasados como integer
- * @param len largo de bytes a reemplazar
- * @return Un puntero al área de memoria 'b'.
+#include "libft.h"
+/**                               FT_MEMSET:
+ * @brief Copia el carácter 'c' (casteado a unsigned char) en los primeros 'n'
+ * bytes de un área de memoria apuntada por 'b'.
+ * @param b El puntero al área de memoria.
+ * @param c El carácter a copiar (pasado como integer).
+ * @param n El número de bytes a reemplazar.
+ * @return El puntero al área de memoria.
+ * @details
+ * SIZET: es un tipo de variable que se utiliza para 'i' de forma que pueda
+ * ser comparado con 'n', garantiza que el argumento pasado a 'n' sea siempre
+ * un número no negativo y que se pueda representar el tamaño más grande de
+ * objeto posible.
+ * CAST: Garantiza que la memoria sea llenada con el valor correcto sin
+ * importar el tamaño de valor pasado a la función. El argumento 'c' es un
+ * integer que puede tener un tamaño más grande que unsigned char, al
+ * castearlo la función asegura que solo los 8 bits inferiores de int sean
+ * utilizados, lo que equivale al tamaño de un byte.
+ * WHILE: un bucle que itera sobre la versión casteada del área de memoria
+ * apuntada por 'b' (unsigned char 'ma') rellenando los 'n' bytes de 'ma'
+ * con el carácter 'c' (casteado a unsigned char). Como la función necesita
+ * trabajar en una pieza generalizada de la memoria y no solo sobre cadenas
+ * terminadas en nulo, este bucle se cumple mientras el valor del contador 
+ * 'i' sea menor que 'n'.
+ * RETURN: un puntero a 'b' que se encontrará modificado.
  */
-void    *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t n)
 {
-    /**
-     * Comenzamos creando una copia de void *b casteado a
-     * unsigned char y compatible con size_t (que solo acepta
-     * valores positivos) para que pueda ser manipulado por la
-     * función. Luego creamos un contador que debe ser size_t
-     * al igual que 'len'.Continuamos iniciando el contador a 0
-     * e igualando 'ma' a una versión casteada de 'b' a unsigned
-     * char para que puedan ser compatibles.
-     */
-    unsigned char   *ma;
-    size_t          i;
+	unsigned char   *ma;
+	size_t          i;
 
-    i = 0;
-    ma = (unsigned char *)b;
-    /**
-     * La función necesita trabajar en una pieza generalizada de
-     * la memoria, no solo sobre cadenas de caracteres terminados
-     * en NULL, por lo tanto no podemos tener un bucle basado en
-     * la idea generalizada de que llegaremos a un final de un
-     * string. La condición del bucle será que mientras el contador
-     * 'i' sea menor que 'len' (siendo len - 1), 'i' recorrerá 'ma'
-     * y además será igual que 'c' (casteado a unsigned char).
-     * Finalmente, se devuelve un puntero a 'b' que ahora contendrá
-     * los nuevos 'len' bytes cambiados por el valor de 'c'.
-     */
-    while (i < len)
-    {
-        ma[i++] = (unsigned char)c;
-    }
-    return (b);
+	i = 0;
+	ma = (unsigned char *)b;
+	while (i < n)
+	{
+		ma[i++] = (unsigned char)c;
+	}
+	return (b);
 }
-/**
- * Para el main creamos un string 's' para pasar como argumento. Usamos
- * la función strcpy para copiar el string que creamos y que vamos a
- * modificar con ft_memset. Luego utilizamos puts para imprimir el string
- * copiado con strcpy sin haberle realizado cambios todavía. Continuamos
- * llamado a la función ft_memset con los argumentos que elijamos.
- * Finalmente, usamos la función puts nuevamente para imprimir el string
- * 's' una vez más pero con los cambios que sufrió con la función ft_memset.
- * Esto nos permite contrastar el string 's' sin modificar con el modificado.
- */
+
+/**                               FT_MAIN:
+ * @brief Convierte la función en programa haciendo posible comprobar su
+ * resultado utilizando un string 's' que se pasa como argumento y la
+ * utilización de las funciones 'strcpy' para copiar ese string y 'puts'
+ * para imprimir su valor y el de retorno.
+*/
 int main(void)
 {
-    char s[30];
-    strcpy(s, "memset");
-    puts(s);
-    ft_memset(s, 'l', 3);
-    puts(s);
-    return (0);
+	char s[30];
+	strcpy(s, "memset");
+	puts(s);
+	ft_memset(s, 'l', 3);
+	puts(s);
+	return (0);
 }

@@ -6,57 +6,45 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:27:44 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:29:09 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 14:02:04 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> // librería que contiene size_t
-#include <string.h> // librería que contiene strncpy
-#include <stdio.h> // librería que contiene printf y puts
-#include "libft.h" // librería local que contiene ft_strlen
-/**
+#include "libft.h"
+/**                             FT_STRLCAT
  * @brief Agrega la cadena 'src' al final de 'dst' según el valor de 'dstsize'.
- *
- * @details La función strlcat() ofrece el argumento 'dstsize' que establece
- * la longitud de la cadena de destino igual al tamaño de su búfer.
- *
- * @param dst cadena de destino
- * @param src cadena de orígen
- * @param dstsize tamaño del búfer de destino
+ * La función strlcat() ofrece el argumento 'dstsize' que establece la longitud 
+ * de la cadena de destino igual al tamaño de su búfer.
+ * @param dst Puntero a la cadena de destino.
+ * @param src Puntero a la cadena de orígen.
+ * @param dstsize El tamaño del búfer de destino.
  * @return La longitud combinada de 'src' y 'dst'.
- */
+ * @details
+ * VARIABLES: 'i': contador que itera sobre 'src'; 'j': contador que itera sobre 
+ * 'j' y es igualado al largo de 'dest'; 'destlen': contenedor del largo de 
+ * 'dest'; 'srclen': contenedor del largo de 'src'.
+ * IF: condicion que permite concatenar 'src' a 'dst' si el largo de 'dst' es
+ * menor que 'dstsize -1' y solo cuando 'dstsize' es mayor que 0. 
+ * WHILE: bucle que permite que el contador 'i' itere sobre 'src' y 'j' sobre 
+ * 'dst' siempre teniendo en cuenta que 'dstlen + i ' debe ser menor que 
+ * 'dstsize -1'. 
+ * NEXT: Luego del bucle, los caracteres NULOs son adheridos al final de 'dst'.
+ * IF: Condición que iguala 'dstlen' a 'dstsize' cuando 'dstlen' es mayor o igual
+ * que 'dstsize'. 
+ * RETURN: 'dstlen' + 'srclen' que será el largo total de la nueva string 
+ * combinada. 
 size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	/**
-     * Comenzamos creando cuatro variables de tipo size_t para compararlas
-     * con el prototipo 'size_t dstsize': dos contadores llamados 'i' y
-     * 'j' y dos contenedores de la longitud de 'dst' y 'src' llamados
-     * 'dstlen' y 'srclen'. Luego igualamos 'srclen' y 'dstlen' a el largo
-     * de 'dst' y 'src' con ayuda de la función ft_strlen, igualamos 'i' a 0
-     * y 'j' al largo de 'dst' que estará ahora contenido en 'dstlen'.
-    */
 	size_t	i;
 	size_t	j;
 	size_t	dstlen;
-	size_t	srclen;
+    size_t	srclen;
 
 	srclen = ft_strlen(src);
 	dstlen = ft_strlen(dst);
 	i = 0;
 	j = dstlen;
-	/**
-     * Continuamos creando una condición que nos permite concatenar 'src' y
-     * 'dst' si el largo de 'dst' es menor que 'dstsize -1' y solo cuando
-     * 'dstsize' sea mayor que 0. Para el bucle creamos la condición que
-     * permita que el contador 'i' avance sobre 'src' y que 'j' avance sobre
-     * 'dst' siempre teniendo en cuenta que 'dstlen + 1' debe ser menor que
-     * 'dstsize -1'. Luego agregamos los caracteres nulos a 'dst' y creamos
-     * otra condición que simplemente iguale 'dstlen' a 'dstsize' cuando
-     * 'dstlen' sea mayor o igual que 'dstsize'. Finalmente, la función
-     * devolverá 'dstlen' + 'srclen' que será el total de longitud de la
-     * nueva cadena combinada.
-    */
-	if (dstlen < dstsize - 1 && dstsize > 0)
+    if (dstlen < dstsize - 1 && dstsize > 0)
 	{
 		while (src[i] && dstlen + i < dstsize - 1)
 		{
@@ -70,20 +58,20 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dstlen = dstsize;
 	return (dstlen + srclen);
 }
-/**
-* Para el main creamos 4 strings: dos son las cadenas 'src' y 'dst' que
-* usaremos como argumentos para comprobar la función y las otras dos serán
-* copias que usaremos para comprobar la función original y así poder comparar
-* nuestra función con la original. A continuación creamos dos variables más que
-* contendrán los retornos de ambas funciones: la nuestra y la original, y las
-* igualamos a los llamados de las funciones pasándoles como argumentos las
-* cadenas que creamos para cada una y el mismo valor para 'dstsize'. Luego
-* usamos printf y puts para imrpimir los valores originales de las cadenas
-* 'src' y 'dst', luego usamos strncpy para copiar 'src' en 'dst' e imprimir
-* el nuevo string combinado con pintf que será el ejemplo que usaremos para
-* ver si la longitud resultado de ambas funciones original y copia son los
-* que queremos. Finalmente, imprimimos los resultados de ambas funciones y
-* combrobamos si son iguales
+/**                            FT_MAIN
+ * @brief Para el main se crean 4 strings: dos son las cadenas 'src' y 'dst' que
+ * se utilizan como argumentos para comprobar la función y las otras dos serán
+ * copias que se utilizan para comprobar la función original y así poder comparar
+ * la función con la original. A continuación se crean dos variables más que 
+ * contendrán los retornos de ambas funciones: la actual y la original, y se 
+ * igualan a los llamados de las funciones pasándoles como argumentos las 
+ * cadenas creadas para cada una y el mismo valor para 'dstsize'. Luego se 
+ * utilizan 'printf' y 'puts' para imrpimir los valores originales de las cadenas
+ * 'src' y 'dst' y 'strncpy' para copiar 'src' en 'dst' e imprimir el nuevo 
+ * string combinado con 'printf' que será el ejemplo utilizado para ver si la 
+ * longitud resultado de ambas funciones original y copia son las esperadas. 
+ * Finalmente, se imprimen los resultados de ambas funciones y se comprueba si 
+ * son iguales.
 */
 int main()
 {

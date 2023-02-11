@@ -6,42 +6,40 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 18:35:54 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:04:46 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/02/01 17:17:31 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    <stdio.h> // library containing printf
-/**
+#include "libft.h"
+/**                           FT_TOUPPER
  * @brief Converts a lowercase character 'c' (passed as integer) to uppercase.
- *
- * @details If the arguments passed to the toupper() function is other than a
- * lowercase alphabet, it returns the same character that is passed 
- * to the function.
- *
- * @param c character passed as integer
+ * If the argument is other than a lowercase alphabet, it returns the same
+ * character that is passed to the function.
+ * @param c The character to be converted passed as integer.
  * @return The character 'c' converted to uppercase, otherwise just 'c'.
- */
+ * @details
+ * IF: checks if 'c' was passed as a lowercase alphabetic character and then 
+ * converts it from lowercase to uppercase.
+ * RETURN: 'c' converted to uppercase or the original value of 'c' if the 
+ * condition is not met.
+ * INFO: The expression "c -= 32" is the same as saying that "c = c - 32" and 
+ * moves the character 'c' back 32 positions in the ASCII table, which is the 
+ * uppercase equivalent of the current value of 'c'.
+*/
 int	ft_toupper(int c)
 {
-	/**
-	 * We start by creating the condition that checks if 'c' was passed as 
-	 * a lowercase alphabetic character and then converts it from lowercase
-	 * to uppercase. Otherwise, the function returns the original value 
-	 * of 'c'. The expression "c -= 32" is the same as saying that 
-	 * "c = c - 32" and moves the character 'c' back 32 positions in the ASCII 
-	 * table, which is the uppercase equivalent of the current value of 'c'.
-    */
 	if (c >= 'a' && c <= 'z')
 		c -= 32;
 	return (c);
 }
-/**
- * For main we simply use printf to print our 'c' character passed as argument
- * and we set it equal to the call of the function with the character we want to
- * pass as argument to check if the function works.
+
+/**                              FT_MAIN
+ * @brief Main checks if the function works by converting it to a program. In
+ * order to properly do this, printf is used to print 'c' using the function 
+ * call and passing a value for 'c' to be used as an argument.
 */
 int	main(void)
 {
 	printf("%c", ft_toupper('a'));
-	return(0);
+	return (0);
 }

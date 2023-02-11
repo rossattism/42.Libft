@@ -6,42 +6,40 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:30:07 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:30:18 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/02/01 17:20:01 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> // librería que contiene printf
-/**
- * @brief Convierte el character minúscula 'c' (pasado como integer) a mayúscula.
- *
+#include "libft.h"
+/**                            FT_TOLOWER:
+ * @brief Convierte el carácter minúscula 'c' (pasado como integer) a mayúscula.
  * @details Si el argumento pasado a la función toupper() no es un alfabeto en
  * minúscula, devuelve el mismo carácter que fue pasado a la función.
- *
- * @param c carácter pasado como integer
+ * @param c carácter a convertir pasado como integer
  * @return El carácter 'c' convertido a mayúscula, sino 'c'.
+ * @details
+ * IF: condición que comprueba si 'c' fue pasado como un carácter alfabético en 
+ * mayúscula para luego convertirlo en minúscula.
+ * RETURN: devuelve el valor de 'c' modificado si la confición se cumple y sino
+ * el original pasado como argumento
+ * INFO: La expresión "c += 32" es igual a decir que "c = c + 32" y mueve el 
+ * carácter 'c' 32 posiciones hacia adelante en la tabla ASCII, que es el 
+ * equivalente en minúscula del valor actual de 'c'.
  */
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
-	/**
-     * Comenzamos creando la condición que comprueba si 'c' fue pasado
-     * como un carácter alfabético en minúscula para luego convertirlo 
-     * en mayúscula. Sino, la función devuelve el valor original de 'c'.
-     * La expresión "c -= 32" es igual a decir que "c = c - 32" y mueve
-     * el carácter 'c' 32 posiciones hacia atrás en la tabla ASCII,
-     * que es el equivalente en mayúscula del valor actual de 'c'.
-    */
-	if (c >= 'a' && c <= 'z')
-		c -= 32;
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
 	return (c);
 }
-/**
- * Para el main simplemente usamos printf para imprimir el carácter 'c' pasado
- * como argumento y, para esto, lo igualamos al llamado de la función con el
- * carácter que pasamos como argumento para comprobar si todo funciona
- * correctamente.
+
+/**                                FT_MAIN
+ * @brief El main comprueba la función convirtiéndola en programa. Para esto
+ * se utiliza printf para imprimir el carácter 'c' con ayuda del llamado a la
+ * función pasando un valor como argumento a 'c'.
 */
-int main(void)
+int	main(void)
 {
-   printf("%c", ft_toupper('a'));
-   return(0);
+	printf("%c", ft_toupper('a'));
+	return (0);
 }

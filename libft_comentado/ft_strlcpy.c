@@ -6,69 +6,58 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:26:37 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:27:19 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 13:27:32 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> // librería que contiene printf
-#include "libft.h" // librería local que contiene ft_strlen
-/**
- * @brief Copia la cadena 'src' terminada en nulo en el búfer 'dst'
- *
- * @details Con la función strlcpy() solo se copian como máximo
- * 'dstsize' caracteres, y el valor devuelto es el tamaño 'src'.
- * Siempre devuelve el tamaño de la cadena 'src',
+#include "libft.h"
+/**								FT_STRLCPY:
+ * @brief Copia la cadena apuntada por 'src' terminada en nulo en el búfer
+ * apuntado por 'dest', asegurando que el búfer de destino termina siempre
+ * en nulo. Solo se copian como máximo 'size' caracteres, y el valor devuelto 
+ * es el tamaño 'src'. Siempre devuelve el tamaño de la cadena 'src', 
  * independientemente de cuántos caracteres se copien.
- *
- * @param dst cadena de destino
- * @param src cadena de orígen
- * @param dstsize tamaño del búfer de destino
+ * @param dest el puntero al buffer de destino
+ * @param src el puntero a la cadena de orígen
+ * @param size el tamaño del búfer de destino
  * @return La longitud de la cadena de orígen 'src'.
+ * @details 
+ * IF: condición que comprueba si el valor recibido por 'size' como argumento
+ * es igual a 0 y que devuelve la longitud de 'src' calculada con 'ft_strlen'.
+ * WHILE: bucle que recorre 'dest' y 'src' mientras copia, a su vez, 'src' en
+ * 'dest' siempre y  cuando 'src' exista y el contador 'i' sea menor que
+ * 'size' -1 (que corresponde al valor nulo). Al salir se agrega nulo al 
+ * final del nuevo 'dest'.
+ * RETURN: la longitud de 'src' calculada por medio de 'ft_strlen'.
  */
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	/**
-	* Comenzamos creando un contador 'unsigned int' que vamos
-	* a necesitar para poder compararlo con 'size_t dstsize'.
-	*/
-	unsigned int	i;
+	size_t	i;
 
-    i = 0;
-	/**
-     * Continuamos creando una primera condición que tendrá como
-     * función devolver el largo de la cadena de orígen en el caso
-     * de que 0 fuera pasado como argumento de 'dstsize'. La segunda
-     * condición será un bucle que copie la 'src' en 'dst' dependiendo
-     * del tamaño del búfer de 'dst'. Finalmente añadimos el carácter
-     * nulo al final de 'dst' y devolvemos la longitud de 'src' como
-     * pide la función original.
-     */
-	if (dstsize == 0)
+	i = 0;
+	if (size == 0)
 		return (ft_strlen(src));
-	while (src[i]  && i < dstsize -1)
+	while (src[i]  && i < size -1)
 	{
-		dst[i] = src[i];
+		dest[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
+	dest[i] = '\0';
 	return (ft_strlen(src));
 }
-/**
- * Para el main comenzamos creando dos strings de tipo char llamados 'src'
- * y 'dst' para pasar como argumentos de la función y poder comprobar los
- * resultados. A continuación creamos un integer que contendrá el retorno de
- * la función y lo igualamos al llamado de la función pasando los strings y
- * el largo de 'dstsize' como argumentos. Finalmente usamos printf para
- * imprimir 'src' y para imprimir el retorno de la función y así poder
- * compararlos.
- */
-int main()
+/**                           FT_MAIN
+ * @brief Comprueba la función utilizando dos cadenas de caracteres 'd' y
+ * 's' que se pasan como argumentos, una variable 'ret' igualada al llamado
+ * de la función y el uso de 'printf' para imprimir 's' y 'ret'.
+*/
+int	main(void)
 {
- char src[] = "strlcpy";
- char dst[] = "is";
- int ret;
- 
- ret = ft_strlcpy(dst, src, 4);
- printf("%s\n", src);
- printf("%d", ret);
+	char s[] = "strlcpy";
+	char d[] = "is";
+	int ret;
+
+	ret = ft_strlcpy(d, s, 4);
+	printf("%s\n", s);
+	printf("%d", ret);
+	return (0);
 }

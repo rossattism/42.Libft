@@ -6,37 +6,34 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 12:07:15 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 12:09:53 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 10:06:05 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    <unistd.h> // library containing write
-/**
- * @brief Verifies if the character 'c' is a digit.
- *
- * @param c character passed as integer
+#include "libft.h"
+/**                                FT_ISDIGIT:
+ * @brief Verifies if the character 'c' (passed as integer) is digit.
+ * @param c The character to verify.
  * @return 1 if digit, 0 if not.
- */
+ * @details
+ * IF: condition that verifies if 'c' is a numerical character and returns 1
+ * if true, else 0.
+*/
 int	ft_isdigit(int c)
 {
-    /**
-     * We start by creating the condition that allows the function
-     * to return 1 if 'c' is numerical. Another way to write it is
-     * with ASCII characters. Else, returns 0.
-    */
 	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
-/**
-* The main verifies that when passing the values to the function
-* it returns what we expect. Since the character is passed as an
-* integer, I do the conversion with +48 so that write can print it.
-* Another way of coding the main is with printf.
-*/
-int main(void)
+
+/**                                	FT_MAIN: 
+ * @brief Tests the result of the function with an integer variable 'ret' that
+ * is set equal to the call of the function. The return value is converted to
+ * character by adding 48 so that it can be printed using write.
+ */
+int	main(void)
 {
-   int ret = ft_isdigit('1') + 48;
-   write (1, &ret, 1);
-   return(0);
+	int ret = ft_isdigit('1') + 48;
+	write (1, &ret, 1);
+	return(0);
 }

@@ -6,43 +6,38 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 13:32:21 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:09:54 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/02/01 17:26:01 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> // library containing size_t
-#include <stdio.h> // library containing printf
-/**
- * @brief Searches for the last occurrence of a character 'c' in a string 's'
- *
- * @param s string
- * @param c character to be found in string
- * @return A pointer to last occurrence of 'c' in 's'
- * and NULL if 'c' is not found.
- */
+#include "libft.h"
+/**                             FT_STRRCHR:
+ * @brief Searches for the last occurrence of a character 'c' in the
+ * null-terminated string pointed to by 's'.
+ * @param s The pointer to the null-terminated string.
+ * @param c The character to search for.
+ * @return A pointer to last occurrence of 'c' in the string pointed to by 's'
+ * and a NULL pointer if 'c' is not found.
+ * @details
+ * VARIABLES: 'find' is the character to find and 'i' the counter to iterate 
+ * over the string 's'.
+ * CAST: 'find' is set equal to the character 'c', casted to 'unsigned char', 
+ * and the counter 'i' is set to 0.
+ * WHILE: a loop that uses 'i' to iterate over the string. 
+ * WHILE: a loop that repeats as long as 'i' is greater than or equal to 0. 
+ * IF: condition met if the position of the counter in the string is equal to 
+ * 'find', that is, equal to the searched character. RETURN: the 's' + 'i' 
+ * pointer. Inside this WHILE 'i' will go backwards, starting from front to 
+ * back in the string. 
+ * RETURN: if 'c' is not found, null is returned.
+*/
 char	*ft_strrchr(const char *s, int c)
 {
-	/**
-     * We start by creating a variable called 'find' that will
-     * be in charge of finding 'c' in the string, and a counter 'i' that
-     * will traverse 's'. We then set 'find' equal to the character
-     * 'c', casted to 'unsigned char', and the counter 'i' to 0.
-     */
 	char	find;
 	int		i;
 
 	find = (unsigned char)c;
 	i = 0;
-	/**
-     * We continue by creating a first condition that will be a loop that
-     * uses 'i' to iterate over the string. Then we create another loop
-     * that repeats as long as 'i' is greater than or equal to 0 and that
-     * inside has the condition that if the position of the counter in the
-     * string is equal to 'find', that is, equal to the searched character,
-     * then return the 's' + 'i' pointer. Inside this last loop 'i' will go
-     * backwards, starting from front to back in the string. Finally, if
-     * 'c' is not found, null is returned.
-    */
 	while (s[i])
 	{
 		i++;
@@ -55,12 +50,14 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/**
- * For main we create a string that will be used as an argument to check if
- * the function is correct. We use printf to print our original string and
- * the character to find. We match a constant pointer 's1' to the function
- * call by passing the string we created and the character to find as arguments.
- * Then we print the new string that points to 'c' or else we print 0.
+
+/**                            FT_MAIN:
+ * @brief For main a string that will be used as an argument is created to 
+ * check if the function is correct. Printf is used to print the original 
+ * string and the character to find. A constant pointer 's1' is matched to 
+ * the function call by passing the string created and the character to find 
+ * as arguments to the function. Then the new string that points to 'c' is
+ * printed or else 0 is printed.
 */
 int	main(void)
 {

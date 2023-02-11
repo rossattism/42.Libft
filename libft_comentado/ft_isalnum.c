@@ -6,39 +6,35 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 12:07:34 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:19:19 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 10:09:36 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    <unistd.h> // librería que contiene write
-/**
- * @brief Verifica si el carácter pasado es alfabético o numérico.
- *
- * @param c carácter pasado como integer
- * @return  1 si es dígito o alfabético, 0 si no lo es.
+#include "libft.h"
+/**                               FT_ISALNUM:
+ * @brief Verifies if the character 'c' is alphabetical or numerical.
+ * @param c The character to verify.
+ * @return  1 if digit or alphabetical, 0 if not.
+ * @details
+ * IF: condition that verifies if 'c' is a numerical or alphabetical character
+ * and returns 1 if true, else 0.
  */
 int	ft_isalnum(int c)
 {
-	/**
-     * Comenzamos creando la condición que permite que la función
-     * devuelva 1 si 'c' es un carácter numérico o alfabético.
-     * Otra forma de escribirlo es con caracteres ASCII. Si esto
-     * no se cumple, devuelve 0.
-     */
 	if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }
-/**
-* El main comprueba que al pasarle los valores a la función
-* devuelva lo que esperamos. Como el carácter es pasado como
-* integer, hago la conversión con +48 para que write pueda
-* imprimirlo. Otra forma de escribir el main es con printf.
-*/
-int main(void)
+
+/**                              FT_MAIN:
+ * @brief Tests the result of the function with an integer variable 'ret' 
+ * that is set equal to the call of the function. The return value is converted 
+ * to character by adding 48 so that it can be printed using write.
+ */
+int	main(void)
 {
-   int ret = ft_isalnum('.') + 48;
-   write (1, &ret, 1);
-   return(0);
+	int ret = ft_isalnum('.') + 48;
+	write (1, &ret, 1);
+	return(0);
 }

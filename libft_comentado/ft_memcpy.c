@@ -6,45 +6,40 @@
 /*   By: srossatt <srossatt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:23:03 by srossatt          #+#    #+#             */
-/*   Updated: 2023/01/04 13:24:40 by srossatt         ###   ########.fr       */
+/*   Updated: 2023/01/27 11:48:58 by srossatt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h> // librería que contiene size_t
-#include <stdio.h> // librería que contiene printf
-/**
- * @brief Copia 'n' bytes desde la posición de origen a la de destino.
- *
- * @param dst string de destino
- * @param src string de orígen
- * @param n longitud de bytes a modificar
- * @return Un puntero a 'dst'.
+#include "libft.h"
+/**                               FT_MEMCPY:
+ * @brief Copia 'n' bytes del área de memoria apuntada por 'src' al área de
+ * memoria apuntada por 'dest'.
+ * @param dest El puntero al área de memoria de destino.
+ * @param src El puntero al área de memoria de orígen.
+ * @param n La longitud de bytes a modificar.
+ * @return Un puntero al área de memoria de destino.
+ * @details
+ * CAST: Garantiza que la memoria sea llenada con el valor correcto sin
+ * importar el tamaño de valor pasado a la función.
+ * SIZET: es un tipo de variable que se utiliza para el contador 'i' de
+ * forma que pueda ser comparado con 'n', garantiza que el argumento pasado
+ * a 'n' sea siempre un número no negativo y que se pueda representar el
+ * tamaño más grande de objeto posible.
+ * IF: comprueba la existencia de 'd' y 's' y devuelve 0 si no existen.
+ * WHILE: un bucle que se cumple mientras el contador sea menor que el valor
+ * recibido de 'n' y que recorre tanto 'd' como 'i' mientras copia los 'n'
+ * caracteres de 's' en 'd'.
+ * RETURN: devuelve el puntero al área de memoria de destino 'dest'.
  */
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	/**
-     * Comenzamos creando dos copias unsigned char llamadas 'd' y 's'
-     * de las cadenas 'dst' y 'src' del prototipo . Luego creamos un
-     * contador size_t que se usará luego en el bucle. Debe ser de tipo
-     * size_t para poder ser comparado con 'n'. Ponemos el contador a 0
-     * y por último casteamos las 'dst' y 'src' originales a unsigned char
-     * para poder meterlas dentro de nuestras copias 'd' y 's'.
-    */
 	unsigned char	*d;
 	unsigned char	*s;
 	size_t			i;
 
-	d = (unsigned char *)dst;
+	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	i = 0;
-	/**
-     * La primer condición restringe la función para que devuelva 0 en 
-	 * los casos en que 'd' y 's' no existan y así prevenir que se rompa. 
-	 * A continuación iniciamos un bucle con la condición de que mientras 
-	 * nuestro contador 'i' sea menor que los 'n' bytes dados, continúe 
-	 * copiándolos del área de memoria de 'src' al área de memoria de 'dst'. 
-	 * Finalmente, devolvemos 'dst' que ahora se encuentra modificado.
-    */
 	if (!d && !s)
 		return (0);
 	while (i < n)
@@ -52,21 +47,20 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		d[i] = s[i];
 		i++;
 	}
-	return (dst);
+	return (dest);
 }
-/**
- * Para el main creamos las cadenas 'd' y 's' para usarlas como argumento 
- * de la función y creamos también un puntero llamado 'ret' que contendrá 
- * el retorno. Igualamos 'ret' al llamado de la función ft_memcpy pasándole 
- * los argumentos y finalmente usamos printf para imprimir la devolución 
- * que será 'dst' modificado por ft_memcpy.
-*/
-int	main(void)
-{
-	char d[30];
-	char s[30] = "memcpy";
-	char *ret;
 
+/**                               FT_MAIN:
+ * @brief Convierte la función en programa haciendo posible testearla por medio 
+ * de dos cadenas 'd' y 's' que se utilizan como argumentos, con una variable 
+ * que contiene el valor de retorno que se iguala al llamado de la función 
+ * y usando 'printf' para imprimir el resultado final.
+ */
+int main(void)
+{
+	char d[10];
+	char s[10] = "memcpy";
+	char *ret;
 	ret = ft_memcpy (d, s, 2);
 	printf ("%s", ret);
 	return (0);
