@@ -9,9 +9,9 @@ Consiste de una librería estática con funciones estándar de C recodificadas. 
 Versión realizada por rossattism para 42 Málaga. </i>
 </p>
 <p align="center"> <b>
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#funciones"> Funciones </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> Guía de estudio </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> Enlace útil </a>
+<a href="https://github.com/rossattism/42Cursus.Libft/blob/main/README.es.md#funciones"> Funciones </a>  • 
+<a href="https://github.com/rossattism/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> Guía de estudio </a>  • 
+<a href="https://github.com/rossattism/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> Enlace útil </a>
 </p> </b>
 <hr>
 
