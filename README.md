@@ -27,7 +27,7 @@ Check the whole list and brief description <a href="https://github.com/rossattis
 If you need further study, click <a href="">here</a>.
 
 ## Useful Links
-Chat GPT is your new best friend: <a href="https://chat.openai.com/chat">https://chat.openai.com/chat</a>. Embrace him!
+ <a href="https://chat.openai.com/chat">Chat GPT</a> is your new best friend. Embrace him!
 
 ## Credits
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
