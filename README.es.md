@@ -1,35 +1,38 @@
-<h1 align="center"> Libft [⚠️en desarrollo] </h1>
+<h1 align="center"> Libft</h1>
 
 <p align="center">
 <img src="https://github.com/byaliego/42-project-badges/blob/main/badges/libft.png?raw=true" alt="libft project badge" /> <br />
-<a href="https://github.com/RossattiSM/Libft/blob/master/README.md"> <img src="https://img.shields.io/badge/lang-en-purple" alt="english language badge"></a> 
-<a href="https://github.com/RossattiSM/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
+<a href="https://github.com/rossattism/Libft/blob/master/README.md"> <img src="https://img.shields.io/badge/lang-en-purple" alt="english language badge"></a> 
+<a href="https://github.com/rossattism/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
 <i> <b> Repositorio para el proyecto Libft del Cursus de 42.</b> <br />
 Consiste de una librería estática con funciones estándar de C recodificadas. <br />
-Versión realizada por RossattiSM para 42 Málaga. </i>
+Versión realizada por rossattism para 42 Málaga. </i>
 </p>
 <p align="center"> <b>
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#sobre-el-proyecto"> Sobre el proyecto </a> • 
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#funciones"> Funciones </a>  • 
 <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> Guía de estudio </a>  • 
-<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> Enlaces útiles </a>
+<a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> Enlace útil </a>
 </p> </b>
 <hr>
 
-> El objetivo de este repositorio es <b> ayudar a los estudiantes </b> (como yo) a obtener el conocimiento necesario <b> para lograr este proyecto </b> sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos, aprovechar la <a href="https://github.com/RossattiSM/42Cursus.Libft/tree/main/libft_comentado"> versión comentada </a> para comprender la codificación y consultar los <a href="https://github.com/RossattiSM/42Cursus.Libft/blob/main/README.es.md#enlaces-%C3%BAtiles"> enlaces útiles </a> para obtener más información.
-
-## Sobre el proyecto
-Libft es el primer proyecto del Cursus de 42. Consiste en crear una librería estática con funciones estándar de C recodificadas y que serán ejecutadas y compiladas usando un Makefile. La librería debe ser reutilizada como soporte para futuros proyectos, ya que está prohibido utilizar las originales. 
+> El objetivo de este repositorio es <b> ayudar a los compis </b> a obtener el conocimiento necesario <b> para lograr este proyecto </b> sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/rossattism/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos y aprovechar la <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/libft_comentado">versión comentada</a> para comprender la codificación.
 
 ## Funciones
+➡ La lista y breve descripción de todas las funciones están en el <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h"> header </a> de la librería. <br>
+⏩ La única razón por la que hice la <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/libft_comentado">versión comentada</a> es para ayudar a otros. ¡Usala!
 
 ## Guía de estudio
+💪 Si necesitas un poco más de estudio, pásate por la <a href="https://github.com/rossattism/42.Libft/wiki">Wiki</a>. No dejes que haberla creado haya sido en vano.
 
-## Enlaces útiles 
+## Enlace útil 
+<a href="https://chat.openai.com/chat">Chat GPT</a> es tu nuevo mejor amigo. ¡Abrazalo!
 
 ## Créditos
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
 
 <hr>
-<a href="https://www.linkedin.com/in/rossattism/"><img src="https://skillicons.dev/icons?i=linkedin" alt="Linkedin Logo" style="width: 16px; height: 16px" /></a> &nbsp | &nbsp
-<a href="https://github.com/RossattiSM"><img src="https://skillicons.dev/icons?i=github" alt="GitHub logo" style="width: 16px; height: 16px" /></a>  &nbsp | &nbsp <i> ✨ creado por Silvina M. Rossatti </i> &nbsp
+<a href="https://www.linkedin.com/in/rossattism/"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/LinkedIN_black.png?raw=true" alt="Linkedin Logo" style="width: 20px; height: 20px" /></a> &nbsp;
+<a href="https://github.com/rossattism"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Github_black.png?raw=true" alt="GitHub logo" style="width: 20px; height: 20px" /></a> &nbsp;
+<a href="https://open.spotify.com/user/21bih47uzlxunyyi4gbbvyvty"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Spotify_black.png?raw=true" alt="Spotify logo" style="width: 20px; height: 20px" /></a> &nbsp;
+<a href="mailto:rossattism@gmail.com"><img src="https://github.com/gauravghongde/social-icons/blob/master/PNG/Black/Gmail_black.png?raw=true" alt="GMAIL logo" style="width: 20px; height: 20px" /></a> &nbsp;
+<a href="https://shields.io/"><img src="https://img.shields.io/badge/Made with-♥-black" /></a>
