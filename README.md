@@ -21,10 +21,13 @@
 Libft is the first project at 42 programming school. It consists of a static library with recoded standard functions in C that runs and compiles the code using a Makefile. The library can be used as a support in future school's projects, since it's not allowed to use the original functions. 
 
 ## Functions
+Check the whole list and brief description <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h">here</a>.
 
 ## Study Guide
+If you need further study, click <a href="">here</a> to read the Wiki.
 
 ## Useful Links
+Chat GPT is your new best friend: <a href="https://chat.openai.com/chat">https://chat.openai.com/chat</a>. Embrace him!
 
 ## Credits
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
