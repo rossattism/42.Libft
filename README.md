@@ -24,7 +24,7 @@ Libft is the first project at 42 programming school. It consists of a static lib
 Check the whole list and brief description <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h">here</a>.
 
 ## Study Guide
-If you need further study, click <a href="">here</a> to read the Wiki.
+If you need further study, click <a href="">here</a>.
 
 ## Useful Links
 Chat GPT is your new best friend: <a href="https://chat.openai.com/chat">https://chat.openai.com/chat</a>. Embrace him!
