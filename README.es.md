@@ -15,17 +15,13 @@ Versión realizada por rossattism para 42 Málaga. </i>
 </p> </b>
 <hr>
 
-> El objetivo de este repositorio es <b> ayudar a los compis </b> a obtener el conocimiento necesario <b> para lograr este proyecto </b> sin hundirse en el proceso 🏄‍♀️. Mi consejo es utilizar la <a href="https://github.com/rossattism/42Cursus.Libft/blob/main/README.es.md#gu%C3%ADa-de-estudio"> guía de estudio </a> para aprender los conceptos básicos y aprovechar la <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/libft_comentado">versión comentada</a> para comprender la codificación.
+> El objetivo de este repositorio es <b> ayudar a compis </b> a <b> lograr este proyecto </b>. No dudes en aprovechar la <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/libft_comentado">versión comentada</a> para comprender la codificación.
 
 ## Funciones
 ➡ La lista y breve descripción de todas las funciones están en el <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h"> header </a> de la librería. <br>
-⏩ La única razón por la que hice la <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/libft_comentado">versión comentada</a> es para ayudar a otros. ¡Usala!
-
-## Guía de estudio
-💪 Si necesitas un poco más de estudio, pásate por la <a href="https://github.com/rossattism/42.Libft/wiki">Wiki</a>. No dejes que haberla creado haya sido en vano.
 
 ## Enlace útil 
-<a href="https://chat.openai.com/chat">Chat GPT</a> es tu nuevo mejor amigo. ¡Abrazalo!
+<a href="https://chat.openai.com/chat">Chat GPT</a> es tu nuevo mejor amigo.
 
 ## Créditos
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
