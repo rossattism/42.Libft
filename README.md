@@ -17,7 +17,7 @@
 > The aim of this repository is to <b> help others like me </b><b> to achieve this project </b>. You can benefit from the <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/commented_libft"> commented version </a> to understand the coding.
 
 ## Functions
-➡ You can find the list and brief description of all the functions in the <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h">header</a>.<br>, and use the <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/commented_libft"> commented version </a>.
+➡ You can find the list and brief description of all the functions in the <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h">header</a>.
 
 ## Useful Link
  <a href="https://chat.openai.com/chat">Chat GPT</a> is your new best friend.
