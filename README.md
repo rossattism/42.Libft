@@ -14,17 +14,13 @@
 
 <hr>
 
-> The aim of this repository is to <b> help students </b> (like me) to get the knowledge that is needed <b> to achieve this project </b> without sinking in the process 🏄‍♀️. My advice is to use the <a href="https://github.com/rossattism/Libft#study-guide"> study guide </a> to learn the basic concepts, and benefit from the <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/commented_libft"> commented version </a> to understand the coding.
+> The aim of this repository is to <b> help others like me </b><b> to achieve this project </b>. You can benefit from the <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/commented_libft"> commented version </a> to understand the coding.
 
 ## Functions
-➡ The list and brief description of all the functions is in the <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h">header</a>.<br>
-⏩ The only reason I made the <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/commented_libft"> commented version </a> is to help others. Use it!
-
-## Study Guide
-💪 If you need further study, go to the <a href="https://github.com/rossattism/42.Libft/wiki">Wiki</a>. Don't let my time creating it be wasted.
+➡ You can find the list and brief description of all the functions in the <a href="https://github.com/rossattism/42.Libft/blob/main/libft/libft.h">header</a>.<br>, and use the <a href="https://github.com/rossattism/42Cursus.Libft/tree/main/commented_libft"> commented version </a>.
 
 ## Useful Link
- <a href="https://chat.openai.com/chat">Chat GPT</a> is your new best friend. Embrace him!
+ <a href="https://chat.openai.com/chat">Chat GPT</a> is your new best friend.
 
 ## Credits
 Libft badge: <a href="https://github.com/byaliego/42-project-badges"> byaliego/42-project-badges </a>
