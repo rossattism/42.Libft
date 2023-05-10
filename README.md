@@ -8,7 +8,6 @@
 </p>
 <p align="center"> <b>
 <a href="https://github.com/rossattism/Libft#functions"> Functions </a>  • 
-<a href="https://github.com/rossattism/Libft#study-guide"> Study Guide </a>  • 
 <a href="https://github.com/rossattism/Libft/blob/main/README.md#useful-links"> Useful Link </a>
 </p> </b>
 
