@@ -1,7 +1,7 @@
 <h1 align="center"> Libft</h1>
 
 <p align="center">
-<img src="https://github.com/byaliego/42-project-badges/blob/main/badges/libft.png?raw=true" alt="libft project badge" /> <br />
+<img src="https://github.com/byaliego/42-project-badges/blob/main/badges/libftn.png?raw=true" alt="libft project badge" /> <br />
 <a href="https://github.com/rossattism/Libft/blob/master/README.md"> <img src="https://img.shields.io/badge/lang-en-purple" alt="english language badge"></a> 
 <a href="https://github.com/rossattism/Libft/blob/master/README.es.md"> <img src="https://img.shields.io/badge/lang-es-purple" alt="spanish language badge"></a> <br />
 <i> <b> Repositorio para el proyecto Libft del Cursus de 42.</b> <br />
